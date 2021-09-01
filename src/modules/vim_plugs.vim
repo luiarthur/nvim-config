@@ -16,6 +16,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'neovim/nvim-lspconfig'            " Language Server Protocol
   Plug 'nvim-lua/completion-nvim'         " Auto completion
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
+  Plug 'folke/lsp-colors.nvim'            " Diagnostics colors for LSP
   " Plug 'tpope/vim-fugitive'               " Git utilities
   " Plug 'vim-airline/vim-airline'          " Learn status bar
   " Plugin 'gmarik/Vundle.vim'                " Vim
