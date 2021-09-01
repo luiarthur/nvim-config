@@ -31,3 +31,9 @@ require'lspconfig'.r_language_server.setup{
     on_attach = require'completion'.on_attach
 }
 EOF
+
+" To get function definitions, use `:Define`.
+function! LspDefine()
+  exec "lua vim.lsp.buf.definition()"
+endfunction
+command -nargs=0 Define :call LspDefine()
