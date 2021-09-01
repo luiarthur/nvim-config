@@ -10,5 +10,5 @@ install:
 
 # Install by copying config files.
 install-copy:
-	ln -s $(PWD)/src/ $(NVIM_HOME)
+	cp -r $(PWD)/src/ $(NVIM_HOME)
 
