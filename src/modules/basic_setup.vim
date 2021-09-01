@@ -5,6 +5,7 @@ map <C-n> <C-w>
 set laststatus=0 ruler  " Hides the status bar.
 set splitbelow  " vertical splits create windows below by default.
 set splitright  " horizontal splits create window to the right by default.
+set mouse=a  " enable copy / paste using mouse, while in vim.
 
 " Basic stuff
 set number                  " Show line numbers on side.
