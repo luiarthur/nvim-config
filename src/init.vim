@@ -5,3 +5,4 @@ source <sfile>:h/modules/basic_setup.vim
 source <sfile>:h/modules/copy_paste.vim
 source <sfile>:h/modules/smart_tab_completion.vim
 source <sfile>:h/modules/vim_plug_config.vim
+source <sfile>:h/modules/lsp_config.vim

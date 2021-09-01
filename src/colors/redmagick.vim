@@ -132,3 +132,6 @@ hi! link Question        DiffChange
 hi! link TabLine         StatusLineNC
 hi! link TabLineFill     StatusLineNC
 hi! link VimHiGroup      VimGroup
+
+" For vim-gitgutter, don't use background colors.
+highlight SignColumn guibg=None ctermbg=None

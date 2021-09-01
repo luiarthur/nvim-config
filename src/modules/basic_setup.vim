@@ -53,9 +53,3 @@ augroup return_cursor_to_last_position
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 
-" Source vim scripts relative to path.
-function! SourceLocal(relativePath)
-  let root = expand('%:p:h')
-  let fullPath = root . '/'. a:relativePath
-  exec 'source ' . fullPath
-endfunction
