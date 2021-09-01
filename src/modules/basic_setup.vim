@@ -1,3 +1,6 @@
+" Ergo alias.
+map <C-n> <C-w>
+
 " NeoVIM stuff
 set laststatus=0 ruler  " Hides the status bar.
 set splitbelow  " vertical splits create windows below by default.

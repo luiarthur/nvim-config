@@ -68,8 +68,8 @@ endfunction
 
 " ------------- Keyboard shortcuts. ---------------
 
-" Use Ctrl-q to open terminal.
-nnoremap <silent> <C-q> :call StartTermBelow()<CR>
+" Use Ctrl-p to open terminal.
+nnoremap <silent> <C-p> :call StartTermBelow()<CR>
 
 " Use Ctrl-h to source a file, if possible.
 nnoremap <silent> <C-h> :call SourceFile()<cr>
