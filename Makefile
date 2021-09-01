@@ -9,10 +9,12 @@ message:
 	@echo
 	@echo Before moving on, please do the following:
 	@echo "    1. Ensure that the latest version of neovim is installed."
-	@echo "    2. Review the notes for installing language servers in \`src/modules/lsp_config.vim\`."
-	@echo "       Note that for convenience, commands are provided for installing"
-	@echo "       language server protocols (LSPs) for Julia, Python, and R."
-	@echo "       For best user experience, use the latest version of each program."
+	@echo "    2. Install the language server protocols (LSPs) for Julia, python, and R using \`make install-all-lsp\`"
+	@echo "       For more info, review the notes for installing language servers in \`src/modules/lsp_config.vim\`."
+	@echo "       You can instead install individual LSPs using:"
+	@echo "       - \`make install-julia-lsp\` (requires julia v1.3+)"
+	@echo "       - \`make install-pyright\` (requires node package manager (npm))"
+	@echo "       - \`make install-r-language-server\` (requires R)"
 	@echo "    3. To install plugins, start neovim (via \`$$ nvim\`) and install the plugins using \`:PlugInstall\`."
 	@echo
 
