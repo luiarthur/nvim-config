@@ -16,7 +16,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'neovim/nvim-lspconfig'            " Language Server Protocol
   Plug 'nvim-lua/completion-nvim'         " Auto completion
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
-  Plug 'dracula/vim', { 'as': 'dracula' } " dracula colorscheme
   " Plug 'tpope/vim-fugitive'               " Git utilities
   " Plug 'vim-airline/vim-airline'          " Learn status bar
   " Plugin 'gmarik/Vundle.vim'                " Vim
@@ -37,4 +36,4 @@ call plug#begin(stdpath('data') . '/plugged')
   " set nofoldenable    " disable folding
 " Initialize plugin system
 call plug#end()
-" colorscheme dracula
+
