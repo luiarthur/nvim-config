@@ -9,6 +9,6 @@ install:
 	ln -s $(PWD)/src/ $(NVIM_HOME)
 
 # Install by copying config files.
-install_by_copy: NVIM_HOME
+install-copy:
 	ln -s $(PWD)/src/ $(NVIM_HOME)
 
