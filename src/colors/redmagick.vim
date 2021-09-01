@@ -135,3 +135,16 @@ hi! link VimHiGroup      VimGroup
 
 " For vim-gitgutter, don't use background colors.
 highlight SignColumn guibg=None ctermbg=None
+
+" For Lsp diagnostic colors.
+" hi! link LspReferenceText DraculaSelection
+" hi! link LspReferenceRead DraculaSelection
+" hi! link LspReferenceWrite DraculaSelection
+hi! link LspDiagnosticsDefaultInformation Directory
+hi! link LspDiagnosticsDefaultHint Function
+hi! link LspDiagnosticsDefaultError Error
+hi! link LspDiagnosticsDefaultWarning WarningMsg
+" hi! link LspDiagnosticsUnderlineError DraculaErrorLine
+" hi! link LspDiagnosticsUnderlineHint DraculaInfoLine
+" hi! link LspDiagnosticsUnderlineInformation DraculaInfoLine
+" hi! link LspDiagnosticsUnderlineWarning DraculaWarnLine

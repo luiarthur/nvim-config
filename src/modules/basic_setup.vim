@@ -13,6 +13,7 @@ set expandtab               " Use softtabs
 set tabstop=2 shiftwidth=2  " Set tab width
 set autoindent              " Automaticall indent lines
 set nobackup                " Don't create .swp
+set clipboard=unnamedplus   " copy and paste to clipboard.
 autocmd TermOpen * setlocal nonumber norelativenumber " Don't use line numbers in terminal
 " autocmd TermOpen * startinsert " Enter insert mode when terminal opens.
 
