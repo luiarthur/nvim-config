@@ -1,5 +1,5 @@
 " Ergo alias.
-map <C-n> <C-w>
+" map <C-n> <C-w>
 
 " NeoVIM stuff
 set laststatus=0 ruler " Hides the status bar. The airline plugin seems to ignore this.
