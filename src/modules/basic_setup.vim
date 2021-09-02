@@ -58,3 +58,12 @@ augroup return_cursor_to_last_position
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 
+" Save and Load session.
+function! SaveSession()
+  exec "mksession! ~/.session.vim"
+endfunction
+function! LoadSession()
+  exec "so ~/.session.vim"
+endfunction
+command -nargs=0 SaveSession :call SaveSession()
+command -nargs=0 LoadSession :call LoadSession()
