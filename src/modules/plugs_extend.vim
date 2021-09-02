@@ -1,2 +1,2 @@
 " NERDTree Shortcut
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
