@@ -38,4 +38,3 @@ call plug#begin(stdpath('data') . '/plugged')
   " set nofoldenable    " disable folding
 " Initialize plugin system
 call plug#end()
-
