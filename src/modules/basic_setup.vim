@@ -2,7 +2,7 @@
 map <C-n> <C-w>
 
 " NeoVIM stuff
-set laststatus=0 ruler  " Hides the status bar.
+set laststatus=0 ruler " Hides the status bar. The airline plugin seems to ignore this.
 set splitbelow  " vertical splits create windows below by default.
 set splitright  " horizontal splits create window to the right by default.
 set mouse=a  " enable copy / paste using mouse, while in vim.

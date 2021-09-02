@@ -17,22 +17,24 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'nvim-lua/completion-nvim'         " Auto completion
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
   Plug 'tpope/vim-fugitive'               " Git utilities
-  " Plug 'vim-airline/vim-airline'          " Learn status bar
-  " Plugin 'gmarik/Vundle.vim'                " Vim
-  " Plugin 'derekwyatt/vim-scala'             " Scala
-  " Plugin 'fatih/vim-go'                     " Go-lang
-  " Plugin 'luiarthur/kotlin-vim'             " Kotlin
-  " Plugin 'tfnico/vim-gradle'                " Gradle
-  " Plugin 'vim-syntastic/syntastic'          " For vim linters
-  " Plugin 'Vimjas/vim-python-pep8-indent'    " Nicer python indentations
-  " Plugin 'vim-latex/vim-latex'              " LaTeX -- causes issues with line feeder.
-  " Plugin 'luiarthur/stan.vim'               " STAN modeling
-  " Plugin 'rust-lang/rust.vim'               " Rust
-  " Plugin 'luiarthur/bayes.vim'              " bayes. My thing.
-  " Plugin 'matze/vim-lilypond'               " lilypond
-  " Plugin 'davidhalter/jedi-vim'            " Python autocomplete
-  " Plugin 'vim-pandoc/vim-pandoc-syntax'    " pandoc
-  " Plugin 'vim-pandoc/vim-pandoc'           " pandoc
+  Plug 'bling/vim-bufferline'             " Display tab info
+  " Plug 'vim-airline/vim-airline'          " status bar
+  " Plug 'vim-airline/vim-airline-themes'   " themes for status bar 
+  " Plug 'gmarik/Vundle.vim'                " Vim
+  " Plug 'derekwyatt/vim-scala'             " Scala
+  " Plug 'fatih/vim-go'                     " Go-lang
+  " Plug 'luiarthur/kotlin-vim'             " Kotlin
+  " Plug 'tfnico/vim-gradle'                " Gradle
+  " Plug 'vim-syntastic/syntastic'          " For vim linters
+  " Plug 'Vimjas/vim-python-pep8-indent'    " Nicer python indentations
+  " Plug 'vim-latex/vim-latex'              " LaTeX -- causes issues with line feeder.
+  " Plug 'luiarthur/stan.vim'               " STAN modeling
+  " Plug 'rust-lang/rust.vim'               " Rust
+  " Plug 'luiarthur/bayes.vim'              " bayes. My thing.
+  " Plug 'matze/vim-lilypond'               " lilypond
+  " Plug 'davidhalter/jedi-vim'            " Python autocomplete
+  " Plug 'vim-pandoc/vim-pandoc-syntax'    " pandoc
+  " Plug 'vim-pandoc/vim-pandoc'           " pandoc
   " set nofoldenable    " disable folding
 " Initialize plugin system
 call plug#end()
