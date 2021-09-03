@@ -14,10 +14,10 @@ map <Down> :bnext<CR>
 map <Up> :bprevious<CR>
 
 " Make :q, by default, only deletes buffer.
-cnoreabbrev q bd<CR>
+" cnoreabbrev q bd<CR>
 
 " Make :Q, an alias for :qa.
-cnoreabbrev Q qa<CR>
+" cnoreabbrev Q qa<CR>
 
 " Basic stuff
 set number                  " Show line numbers on side.

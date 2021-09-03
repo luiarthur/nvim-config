@@ -18,6 +18,8 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
   Plug 'tpope/vim-fugitive'               " Git utilities
   Plug 'bling/vim-bufferline'             " Display tab info
+  " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder
+  " Plug 'junegunn/fzf.vim'                              " fuzzy finder
   " Plug 'vim-airline/vim-airline'          " status bar
   " Plug 'vim-airline/vim-airline-themes'   " themes for status bar 
   " Plug 'vim-syntastic/syntastic'          " For vim linters
