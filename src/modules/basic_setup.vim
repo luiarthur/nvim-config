@@ -8,10 +8,10 @@ set splitright  " horizontal splits create window to the right by default.
 set mouse=a  " enable copy / paste using mouse, while in vim.
 
 " Tab / buffer navigation.
-map <Right> :tabnext<CR>
-map <Left> :tabprevious<CR>
-map <Down> :bnext<CR>
-map <Up> :bprevious<CR>
+map <S-Right> :tabnext<CR>
+map <S-Left> :tabprevious<CR>
+map <S-Down> :bnext<CR>
+map <S-Up> :bprevious<CR>
 
 " Make :q, by default, only deletes buffer.
 " cnoreabbrev q bd<CR>
