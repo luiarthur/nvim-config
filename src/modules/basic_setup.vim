@@ -67,3 +67,10 @@ function! LoadSession()
 endfunction
 command -nargs=0 SaveSession :call SaveSession()
 command -nargs=0 LoadSession :call LoadSession()
+
+" Always open new files as tabs.
+" NOTE: tabs can be close with `:bd`.
+augroup open-tabs
+    au!
+    au VimEnter * ++nested if !&diff | tab all | tabfirst | endif
+augroup end
