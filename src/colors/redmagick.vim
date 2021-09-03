@@ -148,3 +148,6 @@ hi! link LspDiagnosticsDefaultWarning WarningMsg
 " hi! link LspDiagnosticsUnderlineHint DraculaInfoLine
 " hi! link LspDiagnosticsUnderlineInformation DraculaInfoLine
 " hi! link LspDiagnosticsUnderlineWarning DraculaWarnLine
+
+" Vim command prompt.
+hi! MsgArea guibg=None ctermfg=176
