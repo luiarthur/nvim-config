@@ -2,7 +2,6 @@
 set completeopt=menuone,noinsert,noselect
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
-
 " Set up language servers here. See the following sites for more info:
 " - https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#r_language_server
 " - https://github.com/neovim/nvim-lspconfig
