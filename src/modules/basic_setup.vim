@@ -31,8 +31,12 @@ set autoindent              " Automaticall indent lines
 set nobackup                " Don't create .swp
 set clipboard=unnamedplus   " copy and paste to clipboard.
 set guicursor=a:blinkon0    " disable cursor blinking
-autocmd TermOpen * setlocal nonumber norelativenumber " Don't use line numbers in terminal
-" autocmd TermOpen * startinsert " Enter insert mode when terminal opens.
+
+" Terminal behavoir.
+autocmd TermOpen * setlocal nonumber norelativenumber  " Don't use line numbers in terminal.
+autocmd TermOpen * startinsert  " Enter insert mode when terminal opens.
+autocmd BufWinEnter,WinEnter term://* startinsert " Enter insert mode after  entering a terminal window.
+autocmd BufLeave term://* stopinsert " Enter normal model after exiting terminal window.
 
 " Set color scheme
 try
@@ -40,7 +44,10 @@ try
 endtry
 
 " Use Escape key to leave terminal insert mode.
-tnoremap <Esc> <C-\><C-n>
+tnoremap <ESC> <C-\><C-n>
+
+" Remap 'Ctrl + [' to 'Esc'
+imap <C-[> <ESC>
 
 " Indenting / unindenting in visual mode
 vmap < <gv  
@@ -58,11 +65,8 @@ nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
 
-" Remap 'Ctrl + [' to 'Esc'
-imap <C-[> <Esc>
-
 " Reset syntax highlight
-noremap <F10> <Esc>:syntax sync fromstart<CR>
+noremap <F10> <ESC>:syntax sync fromstart<CR>
 inoremap <F10> <C-o>:syntax sync fromstart<CR>
 
 " Return to last position
