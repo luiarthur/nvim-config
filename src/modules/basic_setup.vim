@@ -91,3 +91,13 @@ augroup open-tabs
     au!
     au VimEnter * ++nested if !&diff | tab all | tabfirst | endif
 augroup end
+
+" Maps <Alt>+{h,j,k,l} to jump to neighboring windows regardless of current
+" mode (e.g. NORMAL, INSERT, TERMINAL), only if the luiarthur/vim_map_alt
+" plugin is installed.
+" Note that MacOS users should do ONE of the following: 
+" - change their Terminal Key setting so that Left-Option key (and perhaps
+"   Right-Option key) is set to `Esc+` instead of the default `Normal` mode.
+" - replace this line with
+"     let g:vim_map_alt_mac = 1
+let g:vim_map_alt_linux = 1

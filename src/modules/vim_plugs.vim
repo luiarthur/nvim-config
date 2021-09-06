@@ -19,6 +19,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'tpope/vim-fugitive'               " Git utilities
   Plug 'bling/vim-bufferline'             " Display tab info
   Plug 'luiarthur/repl.vim'               " REPL launcher
+  Plug 'luiarthur/vim-map-alt'               " Use <ALT>+{hjkl} to move between windows in any mode
   " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder
   " Plug 'junegunn/fzf.vim'                              " fuzzy finder
   " Plug 'vim-airline/vim-airline'          " status bar
@@ -35,4 +36,4 @@ call plug#begin(stdpath('data') . '/plugged')
   " Plug 'luiarthur/bayes.vim'              " bayes. My thing.
   " set nofoldenable    " disable folding
 " Initialize plugin system
-call plug#end()
+call plug#end(.)
