@@ -36,4 +36,4 @@ call plug#begin(stdpath('data') . '/plugged')
   " Plug 'luiarthur/bayes.vim'              " bayes. My thing.
   " set nofoldenable    " disable folding
 " Initialize plugin system
-call plug#end(.)
+call plug#end()
