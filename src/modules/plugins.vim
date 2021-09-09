@@ -18,7 +18,9 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
   Plug 'tpope/vim-fugitive'               " Git utilities
   Plug 'bling/vim-bufferline'             " Display tab info
-  Plug 'luiarthur/tmux.vim'               " For REPL integration while editing.
+  " Plug 'luiarthur/tmux.vim'               " For REPL integration while editing.
+  Plug 'luiarthur/repl.vim'               " REPL launcher
+  Plug 'luiarthur/vim-map-alt'            " Use <ALT>+{hjkl} to move between windows in any mode
 call plug#end() " Initialize plugin system
 
 " set nofoldenable    " disable folding
@@ -27,7 +29,7 @@ call plug#end() " Initialize plugin system
 " ----------------------- Other noteworthy plugins ----------------------- "
 " ------------------------------------------------------------------------ "
 " NOTE: The following two plugins are a good alternative to
-" `luiarthur/tmux.vim`jfor non-tmux users.
+" `luiarthur/tmux.vim` for non-tmux users.
 " Plug 'luiarthur/repl.vim'               " REPL launcher
 " Plug 'luiarthur/vim-map-alt'            " Use <ALT>+{hjkl} to move between windows in any mode
 " 

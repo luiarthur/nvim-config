@@ -6,6 +6,8 @@ set laststatus=0 ruler " Hides the status bar. The airline plugin seems to ignor
 set splitbelow  " vertical splits create windows below by default.
 set splitright  " horizontal splits create window to the right by default.
 set mouse=a  " enable copy / paste using mouse, while in vim.
+set fillchars=stl:-  " fill active window's statusline with -
+set fillchars+=stlnc:-  " also fill inactive windows' statusline with -
 
 " Tab / buffer navigation.
 map <S-Right> :tabnext<CR>
