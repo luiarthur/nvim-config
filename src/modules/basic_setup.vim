@@ -34,6 +34,22 @@ set nobackup                " Don't create .swp
 set clipboard=unnamedplus   " copy and paste to clipboard.
 set guicursor=a:blinkon0    " disable cursor blinking
 
+" NOTE: If using WSL2, instead of using vcxsrc, the following can be used.
+" Note that this requires install `win32yank` via `chocolatey` on Windows.
+"
+" let g:clipboard = {
+"           \   'name': 'win32yank-wsl',
+"           \   'copy': {
+"           \      '+': 'win32yank.exe -i --crlf',
+"           \      '*': 'win32yank.exe -i --crlf',
+"           \    },
+"           \   'paste': {
+"           \      '+': 'win32yank.exe -o --lf',
+"           \      '*': 'win32yank.exe -o --lf',
+"           \   },
+"           \   'cache_enabled': 0,
+"           \ }
+
 " Terminal behavoir.
 autocmd TermOpen * setlocal nonumber norelativenumber  " Don't use line numbers in terminal.
 autocmd TermOpen * startinsert  " Enter insert mode when terminal opens.
