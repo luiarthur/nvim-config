@@ -34,18 +34,6 @@ set nobackup                " Don't create .swp
 set clipboard=unnamedplus   " copy and paste to clipboard.
 set guicursor=a:blinkon0    " disable cursor blinking
 
-" NOTE: To access clipboard in WSL2, follow the instructions here:
-"
-" - https://github.com/neovim/neovim/wiki/FAQ#:~:text=If%20Neovim%20is%20only%20installed%20within%20our%20WSL%20distribution
-" - https://github.com/neovim/neovim/issues/12092
-"
-" This basically invovles installing `win32yank` via:
-"
-"     curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
-"     unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
-"     chmod +x /tmp/win32yank.exe
-"     sudo mv /tmp/win32yank.exe /usr/local/bin/
-
 " Terminal behavoir.
 autocmd TermOpen * setlocal nonumber norelativenumber  " Don't use line numbers in terminal.
 autocmd TermOpen * startinsert  " Enter insert mode when terminal opens.
