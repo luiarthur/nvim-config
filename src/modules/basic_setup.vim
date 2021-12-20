@@ -34,21 +34,17 @@ set nobackup                " Don't create .swp
 set clipboard=unnamedplus   " copy and paste to clipboard.
 set guicursor=a:blinkon0    " disable cursor blinking
 
-" NOTE: If using WSL2, instead of using vcxsrc, the following can be used.
-" Note that this requires install `win32yank` via `chocolatey` on Windows.
+" NOTE: To access clipboard in WSL2, follow the instructions here:
 "
-" let g:clipboard = {
-"           \   'name': 'win32yank-wsl',
-"           \   'copy': {
-"           \      '+': 'win32yank.exe -i --crlf',
-"           \      '*': 'win32yank.exe -i --crlf',
-"           \    },
-"           \   'paste': {
-"           \      '+': 'win32yank.exe -o --lf',
-"           \      '*': 'win32yank.exe -o --lf',
-"           \   },
-"           \   'cache_enabled': 0,
-"           \ }
+" - https://github.com/neovim/neovim/wiki/FAQ#:~:text=If%20Neovim%20is%20only%20installed%20within%20our%20WSL%20distribution
+" - https://github.com/neovim/neovim/issues/12092
+"
+" This basically invovles installing `win32yank` via:
+"
+"     curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
+"     unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
+"     chmod +x /tmp/win32yank.exe
+"     sudo mv /tmp/win32yank.exe /usr/local/bin/
 
 " Terminal behavoir.
 autocmd TermOpen * setlocal nonumber norelativenumber  " Don't use line numbers in terminal.
