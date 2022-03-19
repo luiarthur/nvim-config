@@ -2,7 +2,10 @@ SHELL := /bin/bash
 
 NVIM_HOME = $(HOME)/.config/nvim
 
-all: install-copy
+create_nvim_home:
+	mkdir -p $(NVIM_HOME)
+
+all: create_nvim_home install-copy
 
 # Print message
 message:
