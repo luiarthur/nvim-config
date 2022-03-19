@@ -8,5 +8,5 @@ source <sfile>:h/modules/markdown.vim
 " Source plugins.
 source <sfile>:h/modules/plugins.vim
 
-source <sfile>:h/modules/lsp_config.vim
+" source <sfile>:h/modules/lsp_config.vim
 source <sfile>:h/modules/extend_plugins.vim
