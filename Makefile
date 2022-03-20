@@ -8,7 +8,7 @@ create_nvim_home:
 all: create_nvim_home install-copy install-plugins
 
 install-plugins:
-	nvim -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"
+	~/bin/nvim -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"
 
 # Print message
 message:
