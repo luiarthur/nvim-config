@@ -8,7 +8,11 @@ create_nvim_home:
 all: create_nvim_home install-copy install-plugins
 
 install-plugins:
-	~/bin/nvim -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"
+	if [[ -f /.dockerenv ]]; then \
+		~/bin/nvim --appimage-extract-and-run -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"; \
+	else \
+		~/bin/nvim -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"; \
+	fi
 
 # Print message
 message:
