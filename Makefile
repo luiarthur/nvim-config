@@ -5,7 +5,10 @@ NVIM_HOME = $(HOME)/.config/nvim
 create_nvim_home:
 	mkdir -p $(NVIM_HOME)
 
-all: create_nvim_home install-copy
+all: create_nvim_home install-copy install-plugins
+
+install-plugins:
+	nvim -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"
 
 # Print message
 message:
