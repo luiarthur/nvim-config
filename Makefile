@@ -27,7 +27,7 @@ install: message
 
 # Install by copying config files.
 install-copy: message
-	cp -r $(PWD)/src/ $(NVIM_HOME)
+	cp -r $(PWD)/src/* $(NVIM_HOME)
 
 # Install all language server protocols (LSPs). Currently, only for Julia,
 # Python, and R.
