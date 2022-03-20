@@ -9,9 +9,9 @@ all: create_nvim_home install-copy install-plugins
 
 install-plugins:
 	if [ -f /.dockerenv ] && [ `which nvim` = "$(HOME)/bin/nvim" ] ; then \
-		`which nvim` --appimage-extract-and-run -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"; \
+		bash -i && `which nvim` --appimage-extract-and-run -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"; \
 	else \
-		`which nvim` -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"; \
+		bash -i && `which nvim` -es -u src/init.vim -i NONE -c "PlugInstall" -c "qa"; \
 	fi
 
 # Print message
