@@ -40,11 +40,6 @@ autocmd TermOpen * startinsert  " Enter insert mode when terminal opens.
 autocmd BufWinEnter,WinEnter term://* startinsert " Enter insert mode after  entering a terminal window.
 autocmd BufLeave term://* stopinsert " Enter normal model after exiting terminal window.
 
-" Set color scheme
-try
-    colorscheme redmagick
-endtry
-
 " Use Escape key to leave terminal insert mode.
 tnoremap <ESC> <C-\><C-n>
 
