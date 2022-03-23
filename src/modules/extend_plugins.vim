@@ -21,6 +21,5 @@ endfunction
 au BufRead *.jl call JuliaExtendHighligh()
 
 
-" ----------------------------------- Julia highlighting ---------------------
 " ----------------------------------- Set color scheme -----------------------
 silent! colorscheme red
