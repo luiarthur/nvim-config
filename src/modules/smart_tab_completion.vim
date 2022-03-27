@@ -1,3 +1,5 @@
+" TODO: Convert to plugin.
+
 " Intelligent tab completion
 function! InsertTabWrapper(direction)
   let col = col('.') - 1

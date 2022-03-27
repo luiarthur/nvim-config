@@ -34,6 +34,9 @@ set nobackup                " Don't create .swp
 set clipboard=unnamedplus   " copy and paste to clipboard.
 set guicursor=a:blinkon0    " disable cursor blinking
 
+" Color scheme.
+silent! colorscheme noir
+
 " Terminal behavoir.
 autocmd TermOpen * setlocal nonumber norelativenumber  " Don't use line numbers in terminal.
 autocmd TermOpen * startinsert  " Enter insert mode when terminal opens.
