@@ -21,4 +21,8 @@ endfunction
 au BufRead *.jl call JuliaExtendHighligh()
 
 
-" ----------------------------------- Markdown -------------------------------
+" ----------------------------------- Python highlighting --------------------
+function! PythonExtendHighligh() abort
+  syntax keyword pythonTodo NOTE NOTES contained
+endfunction
+au BufRead *.py call PythonExtendHighligh()
