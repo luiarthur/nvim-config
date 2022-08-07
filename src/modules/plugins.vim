@@ -28,7 +28,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'luiarthur/tmux.vim'               " For REPL integration while editing.
   Plug 'luiarthur/red.vim'                " My personal colorscheme.
   Plug 'JuliaEditorSupport/julia-vim'     " Needs to be installed for unicode.
-  " Plug 'luiarthur/repl.vim'               " REPL launcher
+  " Plug 'luiarthur/repl.nvim'              " REPL launcher for neovim
   " Plug 'luiarthur/vim-map-alt'            " Use <ALT>+{hjkl} to move between windows in any mode
 call plug#end() " Initialize plugin system
 
