@@ -1,3 +1,8 @@
+" ---------------------------------- LSP shortcuts ----------------------------
+nnoremap <F2> :LspStart<CR>
+nnoremap <F3> :LspStop<CR>
+nnoremap <F4> :LspInfo<CR>
+
 " ---------------------------------- NERDTree Settings ------------------------
 " NERDTree Shortcut
 nnoremap <C-n> :NERDTreeToggle<CR>
