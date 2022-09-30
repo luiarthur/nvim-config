@@ -23,6 +23,7 @@ require'lspconfig'.pyright.setup{
 -- julia
 -- NOTE: First run the following in Julia v1.3+
 --    julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.add("LanguageServer")'
+--    julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.instantiate()'
 require'lspconfig'.julials.setup{
     on_attach = require'completion'.on_attach,
     autostart = false
