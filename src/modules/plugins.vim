@@ -25,11 +25,11 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
   Plug 'tpope/vim-fugitive'               " Git utilities
   Plug 'bling/vim-bufferline'             " Display tab info
-  Plug 'luiarthur/tmux.vim'               " For REPL integration while editing.
+  " Plug 'luiarthur/tmux.vim'               " For REPL integration while editing.
   Plug 'luiarthur/red.vim'                " My personal colorscheme.
   Plug 'JuliaEditorSupport/julia-vim'     " Needs to be installed for unicode.
-  " Plug 'luiarthur/repl.nvim'              " REPL launcher for neovim
-  " Plug 'luiarthur/vim-map-alt'            " Use <ALT>+{hjkl} to move between windows in any mode
+  Plug 'luiarthur/repl.vim'              " REPL launcher for vim
+  Plug 'luiarthur/vim-map-alt'            " Use <ALT>+{hjkl} to move between windows in any mode
 call plug#end() " Initialize plugin system
 
 " set nofoldenable    " disable folding
