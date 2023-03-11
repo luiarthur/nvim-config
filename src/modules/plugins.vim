@@ -20,7 +20,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'tmux-plugins/vim-tmux'            " tmux
   Plug 'octol/vim-cpp-enhanced-highlight' " C++
   Plug 'preservim/nerdtree'               " file system explorer
-  " Plug 'neovim/nvim-lspconfig'            " Language Server Protocol
+  Plug 'neovim/nvim-lspconfig'            " Language Server Protocol
   Plug 'nvim-lua/completion-nvim'         " Auto completion
   Plug 'airblade/vim-gitgutter'           " Add git diffs on side
   Plug 'tpope/vim-fugitive'               " Git utilities

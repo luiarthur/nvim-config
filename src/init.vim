@@ -10,7 +10,7 @@ source <sfile>:h/modules/smart_tab_completion.vim
 " NOTE: Uncomment this and the nvim-lspconfig plugin in
 "       src/modules/plugins.vim to use language service 
 "       protocal.
-" source <sfile>:h/modules/lsp_config.vim
+source <sfile>:h/modules/lsp_config.vim
 
 source <sfile>:h/modules/markdown_extend.vim
 source <sfile>:h/modules/extend_plugins.vim
